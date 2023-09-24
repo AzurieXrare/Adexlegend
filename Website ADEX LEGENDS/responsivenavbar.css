@@ -1,0 +1,91 @@
+@media screen and (max-width:768px){
+    nav ul{
+        width: 50%;
+    }
+
+    .menu ul{
+        display: inline-block;
+        justify-content: center;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1500px){
+    .bagian{
+        position: absolute;
+        z-index: -1;
+        top: 70px;
+    }
+
+    .bagian ul li a {
+        position: absolute;
+        left:-600px;
+        justify-content: left;
+        display: flex;
+        float: left;
+        top: -40px;
+        width: 50%;
+        font-size: 15px;
+    }
+     
+    .menu-toggle{
+        display: flex;
+    }
+
+    .wrapper .menu ul {
+        position: absolute;
+        right: 0px;
+        width: 35%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #000000D9;
+        top: 70px;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .menu ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .menu ul li a{
+        left: -100px;
+        position: relative;
+        display: block;
+        font-size: smaller;
+    }
+
+    .menu button{
+        position: relative;
+        height: 20px;
+        left: 20px;
+    }
+
+
+    .menu-toggle span{
+        top: 20px;
+        position: relative;
+        right: 20px;
+    }
+    .logo img{
+        position: relative;
+        width:50px;
+        height: 55px;
+        left: -0px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .menu nav ul li a{
+        position: absolute;
+        font-size: 10px;
+        display: inline-block;
+        top: -100px;
+    }
+}
+

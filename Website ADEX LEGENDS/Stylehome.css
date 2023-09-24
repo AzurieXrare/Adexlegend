@@ -1,0 +1,756 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-weight: lighter;
+    font-size: larger;
+    font-family:'Bebas Neue', 'quicksand';
+    
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    font-weight: 800;
+    box-shadow: black;
+    
+}
+
+.logo img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 80px;
+    height: 90px;
+    float: left;
+}
+
+.menu {
+    float: right;
+    margin: 0px;
+    
+}
+
+.menu ul {
+    top: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: right;
+    font-weight: 800;
+    /* width: 100%; */
+}
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    background: #000000D9;
+    z-index: 100;
+    align-items: center;
+}
+
+nav ul{
+    
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    float: right;
+    color:white;
+    font-weight: 550;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: -90px;
+    letter-spacing: 0.1em;
+}
+
+nav ul li a{
+    background: none;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+nav ul li a:hover{
+    color:red;
+}
+
+nav ul li a::before{
+    content:"";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+ nav ul li button{
+    float:left;
+    margin-top: -14px;
+    margin-left: 0px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:  center;
+    text-align: center;
+    min-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0.1em;
+    font-family: 'Bebas Neue';
+}
+.btn{
+    background: none;
+    border: 1px solid #c43c1d;
+    text-transform: normal;
+    padding: 10px 1px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    letter-spacing: 0.1em;
+    background-color: #c72222;
+    font-family:'Bebas Neue';
+    font-size: 20px;
+}
+
+.btn:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    opacity: 0;
+    right: 4px;
+    top: 20px;
+    cursor: pointer;
+    z-index:2;
+}
+
+.menu-toggle span{
+    /* position: absolute; */
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:white ;
+    border-radius: 3px;
+    align-items: center;
+    margin-top: 5px;
+    top: 10px;
+    transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity:0;
+    transform: scale(0);
+}
+.container{
+    font-family:'Bebas Neue';
+    margin: auto;
+    width: 100%;
+}
+.container .homeimg img{
+    width: 100%;
+    height: 850px;
+    position: absolute;
+    background-position: center;
+    object-fit: cover;
+}
+
+.container .deskripsi img{
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    left: 24.2%;
+    top: 240px;
+    border-radius: 0px;
+    object-fit: cover;
+}
+
+.container .deskripsi h1{
+    position: absolute;
+    height: 24px;
+    left: 24.2%;
+    top: 400px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 1.5vw;
+}
+
+.container .deskripsi h2{
+    position: absolute;
+    height: 43px;
+    width: 17%;
+    left: 20%;
+    top: 450px;
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'quicksand';
+
+}
+
+.container .deskripsi ul li a{
+    position: absolute;
+    top: 520px;
+    left: 23%;
+    height:100px;
+}
+
+.container .button2 ul li a{
+    position: absolute;
+    top: 580px;
+    left: 23%;
+    height: 100px;
+}
+
+.container .deskripsi .btn{
+    font-size: 1vw;
+}
+
+
+.container .deskripsi2 img{
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    top: 850px;
+    object-fit: cover;
+}
+
+.container .deskripsi2 h1{
+    position: absolute;
+    height: 38px;
+    width: 24%;
+    right: 4%;
+    top: 960px;   
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 1.5vw;
+    
+}
+
+.container .deskripsi2 h2{
+    position: absolute;
+    height: 38px;
+    text-align: center;
+    width: 24%;
+    right: 11%;
+    top: 1010px;
+    margin: auto;   
+    color: white;
+    font-weight: 500;
+    font-size: 1.1vw;
+    font-family: 'quicksand';
+}
+
+.deskripsi3 img{
+    position: absolute;
+    top: 1400px;
+    outline: none;
+    height: 730px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.deskripsi3 iframe{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    top: 1430px;
+    left: 45%;
+    object-fit: cover;
+}
+
+.deskripsi3 h1{
+    position: absolute;
+    top: 1650px;
+    left: 10%;
+    font-size: 1.6vw;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.deskripsi3 h2{
+    position: absolute;
+    top: 1700px;
+    left: 10%;
+    width: 20%;
+    font-size: 1.1vw;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'quicksand';
+}
+
+.deskripsi3 ul li a{
+    position: absolute;
+    top: 1800px;
+    left: 14%;
+    
+}
+
+.deskripsi4 img{
+    position: absolute;
+    top: 2130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.deskripsi4 .img1 img{
+    position: absolute;
+    top: 2350px;
+    left: 20%;
+    height: 290px;
+    width: 370px;
+}
+
+.deskripsi4 .img2 img{
+    position: absolute;
+    top: 2350px;
+    left: 800px;
+    height: 290px;
+    width: 370px;
+}
+
+.deskripsi4 .img3 img{
+    position: absolute;
+    top: 2350px;
+    left: 1200px;
+    height: 290px;
+    width: 370px;
+}
+
+.deskripsi4 .img1 h1{
+    position: absolute;
+    top: 2670px;
+    left: 450px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 30px;
+}
+
+.deskripsi4 .img1 h2{
+    position: absolute;
+    top: 2720px;
+    left: 420px;
+    color: black;
+    font-weight: 500;
+    font-family: 'quicksand';
+    text-align: center;
+    font-size: 20px;
+    width: 350px;
+}
+
+.deskripsi4 .img2 h1{
+    position: absolute;
+    top: 2670px;
+    left: 870px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 30px;
+}
+
+.deskripsi4 .img2 h2{
+    position: absolute;
+    top: 2720px;
+    left: 820px;
+    color: black;
+    font-weight: 500;
+    font-family: 'quicksand';
+    text-align: center;
+    font-size: 20px;
+    width: 350px;
+}
+
+.deskripsi4 .img3 h1{
+    position: absolute;
+    top: 2670px;
+    left: 1280px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 30px;
+}
+
+.deskripsi4 .img3 h2{
+    position: absolute;
+    top: 2720px;
+    left: 1220px;
+    color: black;
+    font-weight: 500;
+    font-family: 'quicksand';
+    text-align: center;
+    font-size: 20px;
+    width: 350px;
+}
+
+.deskripsi5 img{
+    position:relative;
+    top: 2330px;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.deskripsi5 .img img{
+    position: absolute;
+    top: 3100px;
+    left: 400px;
+    height: 500px;
+    width: 500px;
+}
+
+.deskripsi5 .img h1{
+    position: absolute;
+    top: 3200px;
+    left: 1070px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 30px;
+}
+
+.deskripsi5 .img h2{
+    position: absolute;
+    top: 3250px;
+    left: 1070px;
+    color: black;
+    font-weight: 500;
+    font-family: 'quicksand';
+    text-align: left;
+    font-size: 20px;
+    width: 400px;
+}
+
+.deskripsi5 ul li a{
+    position: absolute;
+    top: 3370px;
+    left: 1070px;
+}
+
+.news{
+    letter-spacing: 0.05em;
+}
+.news img{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    left: 0px;
+    top: 3685px;
+}
+
+.news h1{
+    position: absolute;
+    top: 3800px;
+    left: 880px;
+    text-align: center;
+    margin: center;
+    font-weight: 500;
+}
+
+.news .news1 img{
+    position: absolute;
+    height: 178px;
+    width: 315px;
+    left: 387px;
+    top: 3892px;
+    border-radius: 0px;
+}
+
+.news1 .deskripsi{
+    position: absolute;
+    height: 296px;
+    width: 315px;
+    left: 387px;
+    top: 4070px;
+    border-radius: 0px;
+    background: black;
+}
+
+.news1 .deskripsi h1{
+    font-weight: 500;
+    position:absolute;
+    height: 14px;
+    width: 100px;
+    left: 110px;
+    top: 30px;
+    color: white;
+    font-size: 15px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.news1 .deskripsi h2{
+    position: absolute;
+    height: 14px;
+    width: 280px;
+    left: 25px;
+    top: 70px;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Bebas neue';
+}
+
+.news1 .deskripsi h3{
+    position: absolute;
+    height: 14px;
+    width: 230px;
+    left: 45px;
+    top: 130px;
+    color: #F32D2D;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'quicksand';
+}
+
+.news .news2 img{
+    position: absolute;
+    height: 178px;
+    width: 315px;
+    left: 802px;
+    top: 3892px;
+    border-radius: 0px;
+}
+
+.news2 .deskripsi{
+    position: absolute;
+    height: 296px;
+    width: 315px;
+    left: 802px;
+    top: 4070px;
+    border-radius: 0px;
+    background: black;
+}
+
+.news2 .deskripsi h1{
+    position:absolute;
+    height: 14px;
+    width: 100px;
+    left: 110px;
+    top: 30px;
+    color: white;
+    font-size: 15px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.news2 .deskripsi h2{
+    position: absolute;
+    height: 14px;
+    width: 250px;
+    left: 35px;
+    top: 70px;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'bebas neue';
+}
+
+.news2 .deskripsi h3{
+    position: absolute;
+    height: 14px;
+    width: 230px;
+    left: 45px;
+    top: 130px;
+    color: #F32D2D;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'quicksand';
+}
+
+.news .news3 img{
+    position: absolute;
+    height: 178px;
+    width: 315px;
+    left: 1217px;
+    top: 3892px;
+    border-radius: 0px;
+}
+
+.news3 .deskripsi{
+    position: absolute;
+    height: 296px;
+    width: 315px;
+    left: 1217px;
+    top: 4070px;
+    border-radius: 0px;
+    background: black;
+}
+
+.news3 .deskripsi h1{
+    position:absolute;
+    height: 14px;
+    width: 100px;
+    left: 110px;
+    top: 30px;
+    color: white;
+    font-size: 15px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.news3 .deskripsi h2{
+    position: absolute;
+    height: 14px;
+    width: 250px;
+    left: 35px;
+    top: 70px;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'bebas neue';
+}
+
+.news3 .deskripsi h3{
+    position: absolute;
+    height: 14px;
+    width: 230px;
+    left: 45px;
+    top: 130px;
+    color: #F32D2D;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'quicksand';
+}
+.footer{
+    position: absolute;
+    top: 4500px;
+    height: 700px;
+    width: 100%;
+} 
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(foto/bgMainMaps.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.cta p{
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'quicksand';
+}
+.cta .footerbtn{
+  display: inline-block;
+  text-decoration: none;
+  color: #f44336;
+  border: 1px solid #f44336;
+  padding: 15px 40px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.cta .footerbtn:hover{
+  border: 1px solid #f44336;
+  color: white;
+  background: #f44336;
+  transition: 0.5s;
+}
+.icon .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.icon .fa:hover{
+    color: rgb(226, 145, 145);
+}
+.fa-heart{
+    color: #f44336;
+}

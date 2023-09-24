@@ -1,0 +1,709 @@
+@media screen and (max-width: 800px){
+    .container img{
+        position: absolute;
+        height: 500px;
+        top: 70px;
+        
+    }
+
+    .container .deskripsi img{
+        position: absolute;
+        left: 45%;
+        width: 100PX;
+        height: 100px;
+    }
+
+    .container .deskripsi h1{
+        position: absolute;
+        left: 37%;
+        font-size: 3.5vw;
+        width: 30%;
+        top: 290px;
+        
+    }
+    
+    .container .deskripsi h2{
+        position: absolute;
+        left: 28%;
+        font-size: 2vw;
+        width: 50%;
+        
+    }
+
+    .container2 img{
+        position: absolute;
+        top: 570px;
+        height: 9400px;
+        width: 100%;
+    }
+
+    .container2 .legends1 img{
+        position: absolute;
+        top: 570px;
+        height: 250px;
+    }
+    .container2 .newcastle img{
+        position: absolute;
+        top: 800px;
+        height: 400px;
+        width: 300px;
+        left: 30%;
+    }
+
+    .container2 .newcastle h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        width: 50%;
+    }
+    .container2 .newcastle h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3vw;
+        top: 1280px;
+    }
+
+    .container2 .newcastle h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 1310px;
+    }
+
+    .container2 .newcastle h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 1350px;
+        width: 80%;
+    }
+
+    .container2 .newcastle h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 1610px;
+        width: 70%;
+    }
+
+    .container2 .newcastle iframe{
+        position: absolute;
+        top: 1750px;
+        height: 400px;
+        width:90%;
+        left: 5%;
+    }
+
+    .container2 .legends2 img{
+        position: absolute;
+        top: -100px;
+        height: 250px;
+    }
+
+    .container2 .pathfinder img{
+        position: absolute;
+        top: 170px;
+        height: 400px;
+        width: 300px;
+        left: 30%;
+    }
+
+    .container2 .pathfinder h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        width: 50%;
+        top: 650px;
+    }
+
+    .container2 .pathfinder h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3vw;
+        top: 680px;
+    }
+
+    .container2 .pathfinder h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 710px;
+    }
+
+    .container2 .pathfinder h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 750px;
+        width: 80%;
+    }
+
+    .container2 .pathfinder h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 920px;
+        width: 70%;
+    }
+
+    
+    .container2 .pathfinder iframe{
+        position: absolute;
+        top: 1050px;
+        height: 400px;
+        width:90%;
+        left: 5%;
+    }
+
+    .container2 .legends3 img{
+        position: absolute;
+        top: -800px;
+        height: 250px;
+    }
+
+    .container2 .valkyrie img{
+        position: absolute;
+        top: -500px;
+        height: 400px;
+        width: 300px;
+        left: 30%;
+    }
+
+    .container2 .valkyrie h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        width: 50%;
+        top: 0px;
+    }
+
+    .container2 .valkyrie h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3vw;
+        top: 30px;
+    }
+
+    .container2 .valkyrie h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 60px;
+    }
+
+    .container2 .valkyrie h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 100px;
+        width: 80%;
+    }
+
+    .container2 .valkyrie h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: 400px;
+        width: 70%;
+    }
+
+    
+    .container2 .valkyrie iframe{
+        position: absolute;
+        top: 200px;
+        height: 400px;
+        width:90%;
+        left: 5%;
+    }
+
+    .container2 .legends4 img{
+        position: absolute;
+        top: -1300px;
+        height: 250px;
+    }
+
+    .container2 .octane img{
+        position: absolute;
+        top: -1000px;
+        height: 400px;
+        width: 300px;
+        left: 30%;
+    }
+
+    .container2 .octane h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        width: 50%;
+        top: -500px;
+    }
+
+    .container2 .octane h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3vw;
+        top: -470px;
+    }
+
+    .container2 .octane h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: -430px;
+    }
+
+    .container2 .octane h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: -400px;
+        width: 80%;
+    }
+
+    .container2 .octane h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: -230px;
+        width: 70%;
+    }
+
+    
+    .container2 .octane iframe {
+        position: absolute;
+        top:-100px;
+        height: 400px;
+        width:90%;
+        left: 5%;
+    }
+
+    .container2 .legends5 img{
+        position: absolute;
+        top: -1950px;
+        height: 250px;
+    }
+
+    .container2 .bangalore img{
+        position: absolute;
+        top: -1700px;
+        height: 400px;
+        width: 300px;
+        left: 30%;
+    }
+
+    .container2 .bangalore h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        width: 50%;
+        top: -1200px;
+    }
+
+    .container2 .bangalore h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3vw;
+        top: -1170px;
+    }
+
+    .container2 .bangalore h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: -1130px;
+    }
+
+    .container2 .bangalore h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: -1100px;
+        width: 80%;
+    }
+
+    .container2 .bangalore h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2vw;
+        top: -930px;
+        width: 70%;
+    }
+
+    
+    .container2 .bangalore iframe{
+        position: absolute;
+        top: -800px;
+        height: 400px;
+        width:90%;
+        left: 5%;
+    }
+    .footer{
+        position: absolute;
+        top: 9300px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width:425px){
+    .logo img{
+        height: 40px;
+        width: 35px;
+        left: -17px;
+        top: 4px;
+    }
+    .container img{
+        position: absolute;
+        height: 210px;
+        top: 55px;
+    }
+
+    
+    .container .deskripsi img{
+        position: absolute;
+        left: 41%;
+        width: 80px;
+        height: 80px;
+        top: 90px;
+    }
+
+    .container .deskripsi h1{
+        position: absolute;
+        left: 35%;
+        font-size: 3.5vw;
+        width: 30%;
+        top: 165px;
+        
+    }
+    .container .deskripsi h2{
+        position: absolute;
+        left: 25%;
+        font-size: 2vw;
+        line-height: 10px;
+        top: 200px;
+        
+    }
+
+    .container2 img{
+        position: absolute;
+        top: 265px;
+        height: 5250px;
+        width: 100%;
+    
+    }
+    .container2 .legends1 img{
+        position: absolute;
+        top: 267px;
+        height: 170px;
+    }
+    .container2 .newcastle img{
+        position: absolute;
+        top: 430px;
+        height: 220px;
+        width: 120px;
+        left: 35%;
+    }
+
+    .container2 .newcastle h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        width: 60%;
+        top: 670px;
+    }
+    .container2 .newcastle h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3.5vw;
+        top: 690px;
+    }
+
+    .container2 .newcastle h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: 720px;
+        width: 40%;
+    }
+
+    .container2 .newcastle h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: 750px;
+        width: 80%;
+        line-height: 15px;
+        height: 200px;
+    }
+
+    .container2 .newcastle h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: 900px;
+        width: 70%;
+    }
+
+    
+    .container2 .newcastle iframe{
+        position: absolute;
+        top: 950px;
+        height: 200px;
+        width:80%;
+        left: 10%;
+    }
+
+    .container2 .legends2 img{
+        position: absolute;
+        top: -1150px;
+        height: 170px;
+    }
+
+    .container2 .pathfinder img{
+        position: absolute;
+        top: -950px;
+        height: 220px;
+        width: 120px;
+        left: 35%;
+    }
+
+    .container2 .pathfinder h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        width: 60%;
+        top: -700px;
+    }
+    .container2 .pathfinder h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3.5vw;
+        top: -680px;
+    }
+
+    .container2 .pathfinder h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -655px;
+        width: 40%;
+    }
+
+    .container2 .pathfinder h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -625px;
+        width: 80%;
+        line-height: 15px;
+        height: 100px;
+    }
+
+    .container2 .pathfinder h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -530px;
+        width: 70%;
+    }
+
+    .container2 .pathfinder iframe{
+        position: absolute;
+        top: -450px;
+        height: 200px;
+        width:80%;
+        left: 10%;
+    }
+
+    .container2 .legends3 img{
+        position: absolute;
+        top: -2570px;
+        height: 170px;
+    }
+    .container2 .valkyrie img{
+        position: absolute;
+        top: -2400px;
+        height: 220px;
+        width: 120px;
+        left: 35%;
+    }
+
+    .container2 .valkyrie h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        width: 60%;
+        top: -2150px;
+    }
+    .container2 .valkyrie h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3.5vw;
+        top: -2130px;
+    }
+
+    .container2 .valkyrie h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -2100px;
+        width: 40%;
+    }
+
+    .container2 .valkyrie h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -2070px;
+        width: 80%;
+        line-height: 15px;
+        height: 200px;
+    }
+
+    .container2 .valkyrie h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -1900px;
+        width: 70%;
+    }
+
+    .container2 .valkyrie iframe{
+        position: absolute;
+        top: -1800px;
+        height: 200px;
+        width:80%;
+        left: 10%;
+    }
+
+    .container2 .legends4 img{
+        position: absolute;
+        top: -3910px;
+        height: 170px;
+        width: 100%;
+    }
+    .container2 .octane img{
+        position: absolute;
+        top: -3750px;
+        height: 220px;
+        width: 120px;
+        left: 35%;
+    }
+
+    .container2 .octane h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        width: 60%;
+        top: -3500px;
+    }
+    .container2 .octane h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3.5vw;
+        top: -3480px;
+    }
+
+    .container2 .octane h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -3455px;
+        width: 40%;
+    }
+
+    .container2 .octane h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -3420px;
+        width: 80%;
+        line-height: 15px;
+        height: 100px;
+    }
+
+    .container2 .octane h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -3320px;
+        width: 70%;
+    }
+
+    .container2 .octane iframe {
+        position: absolute;
+        top: -3200px;
+        height: 200px;
+        width:80%;
+        left: 10%;
+        
+    }
+
+    .container2 .legends5 img{
+        position: absolute;
+        top: -5310px;
+        height: 170px;
+    }
+    .container2 .bangalore img{
+        position: absolute;
+        top: -5150px;
+        height: 220px;
+        width: 120px;
+        left: 35%;
+    }
+
+    .container2 .bangalore h1{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        width: 60%;
+        top: -4900px;
+    }
+    .container2 .bangalore h2{
+        position: absolute;
+        left: 10%;
+        font-size: 3.5vw;
+        top: -4880px;
+    }
+
+    .container2 .bangalore h3{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -4855px;
+        width: 40%;
+    }
+
+    .container2 .bangalore h4{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -4820px;
+        width: 80%;
+        line-height: 15px;
+    }
+
+    .container2 .bangalore h5{
+        position: absolute;
+        left: 10%;
+        font-size: 2.5vw;
+        top: -4720px;
+        width: 70%;
+    }
+
+    .container2 .bangalore iframe{
+        position: absolute;
+        top: -4650px;
+        height: 200px;
+        width:80%;
+        left: 10%;
+    }
+    .footer{
+        position: absolute;
+        top: 5250px;
+        width: 100%;
+        height: 700px;
+        bottom:0;
+        margin: 0;
+    }
+}

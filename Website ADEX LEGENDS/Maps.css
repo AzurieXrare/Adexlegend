@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    font-weight: lighter;
+    font-size: larger;
+    font-family:'Bebas Neue', 'quicksand';
+  }
+  .wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    font-weight: 800;
+    box-shadow: black;
+    
+}
+
+.logo img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 80px;
+    height: 90px;
+    float: left;
+}
+
+.menu {
+    float: right;
+    margin: 0px;
+    
+}
+
+.menu ul {
+    top: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: right;
+    font-weight: 800;
+    /* width: 100%; */
+}
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    background: #000000D9;
+    z-index: 100;
+    align-items: center;
+}
+
+nav ul{
+    
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    float: right;
+    color:white;
+    font-weight: 550;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: -90px;
+    letter-spacing: 0.1em;
+}
+
+nav ul li a{
+    background: none;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+nav ul li a:hover{
+    color:red;
+}
+
+nav ul li a::before{
+    content:"";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+ nav ul li button{
+    float:left;
+    margin-top: -14px;
+    margin-left: 0px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:  center;
+    text-align: center;
+    min-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0.1em;
+    font-family: 'Bebas Neue';
+}
+.btn{
+    background: none;
+    border: 1px solid #c43c1d;
+    text-transform: normal;
+    padding: 10px 1px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    letter-spacing: 0.1em;
+    background-color: #c72222;
+    font-family:'Bebas Neue';
+    font-size: 20px;
+}
+
+.btn:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    opacity: 0;
+    right: 4px;
+    top: 20px;
+    cursor: pointer;
+    z-index:2;
+}
+
+.menu-toggle span{
+    /* position: absolute; */
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:white ;
+    border-radius: 3px;
+    align-items: center;
+    margin-top: 5px;
+    top: 10px;
+    transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity:0;
+    transform: scale(0);
+}
+  .bodyy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(foto/bgcard.jpg);
+    background-size: cover;
+  }
+  .main{
+    font-size: 65.5%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(foto/bgMainMaps.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main .content{
+    margin: 5%;
+    padding-top: 15%;
+    max-width: 60rem;
+}
+
+.main .content h3{
+    font-size: 700%;
+    text-transform: uppercase;
+    color:white;
+}
+
+.main .content p{
+    font-size: 200%;
+    line-height: 1.5;
+    padding:1rem 0;
+    color: white;
+    font-family: 'quicksand';
+}
+
+.mapsss{
+    font-size: 65.5%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    background: url(foto/bgmodes.png) no-repeat;
+    background-size: cover;
+}
+.mapsss .content{
+    padding:5%;
+    max-width: 80rem;
+}
+
+.mapsss .content h3{
+    padding-bottom: 3%;
+    font-size: 500%;
+    color: white;
+}
+
+.mapsss .content p{
+    font-size: 250%;
+    line-height: 1.8;
+    color: white;
+    font-family: 'quicksand';
+}
+
+
+  .flip-card {
+    margin: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    width: 380px;
+    min-height: 600px;
+    height: auto;
+    background-color: #000000;
+    background-image:        url(foto/maps1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+  
+  .flip-card:nth-of-type(2) .flip-card-front,
+  .flip-card:nth-of-type(2) .flip-card-back {
+    background-image: url(foto/maps2.jpg);
+  }
+  
+  .flip-card:nth-of-type(3) .flip-card-front,
+  .flip-card:nth-of-type(3) .flip-card-back {
+    background-image: url(foto/maps3.jpg);;
+  }
+  
+  .flip-card:nth-of-type(4) .flip-card-front,
+  .flip-card:nth-of-type(4) .flip-card-back {
+    background-image: url(foto/maps4.jpg);;
+  }
+
+  .flip-card:nth-of-type(5) .flip-card-front,
+  .flip-card:nth-of-type(5) .flip-card-back {
+    background-image: url(foto/maps5.jpg);;
+  }
+
+  .flip-card:nth-of-type(6) .flip-card-front,
+  .flip-card:nth-of-type(6) .flip-card-back {
+    background-image: url(foto/maps6.png);;
+  }
+  .flip-card-front {
+    transform: rotateY(0deg);
+  }
+  
+  .flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front::after,
+  .flip-card-back::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+  }
+  
+  .flip-card-front .inner,
+  .flip-card-back .inner {
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    z-index: 2;
+  }
+  
+  .inner .icon {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .inner h3 {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: capitalize;
+  }
+  
+  .inner p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'quicksand';
+  }
+  
+  .flip-card:hover .flip-card-front {
+    transform: rotateY(-180deg);
+  }
+  
+  .flip-card:hover .flip-card-back {
+    transform: rotateY(0deg);
+  }
+  
+  .cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(foto/bgMainMaps.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.cta p{
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'quicksand';
+}
+.cta .footerbtn{
+  display: inline-block;
+  text-decoration: none;
+  color: #f44336;
+  border: 1px solid #f44336;
+  padding: 15px 40px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.cta .footerbtn:hover{
+  border: 1px solid #f44336;
+  color: white;
+  background: #f44336;
+  transition: 0.5s;
+}
+.icon .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.icon .fa:hover{
+    color: rgb(226, 145, 145);
+}
+.fa-heart{
+    color: #f44336;
+}
